@@ -1,0 +1,110 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: rgb(230,230,230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.carteCinema {
+    width: 800px;
+    height: 400px;
+    flex-shrink: 0;
+    background: #000;
+    display: flex;
+    margin-bottom: 200px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 20px 30px rgba(0,0,0,0.5);
+}
+.logoMain {
+    position: absolute;
+    right: -15px;
+    bottom: 50px;
+    z-index: 1;
+}
+.imgLogo {
+    width: 130px;
+}
+.image {
+    width: 40%;
+    height: 100%;
+    background: url('ressources/imgMovie.jpg');
+    background-position: 10px 1px;
+}
+.contenu {
+    width: 60%;
+    height: 100%;
+}
+
+.titreFilm {
+    font-size: 40px;
+    color: #f1f1f1;
+    padding: 20px 20px 0px 20px;
+    margin: 0;
+}
+.caracts {
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    color: #f1f1f1;
+}
+.info {
+    margin: 0;
+    width: 20%;
+    padding: 0px 20px;
+}
+.classement {
+    width: 100%;
+    display: flex;
+    padding: 10px 0px 0px 13px;
+}
+.stars {
+    margin: 0px 5px;
+}
+.synopsis {
+    width: 80%;
+    padding: 10px 0px 0px 20px;
+    color: #f1f1f1;
+    position: relative;
+    z-index: 100;
+}
+.lienMore {
+    color: #f1f1f1;
+}
+.regarder {
+    width: 80%;
+    display: flex;
+    color: #fbeded;
+    padding: 10px 0px 0px 15px;
+}
+.btn {
+    width: 180px;
+    height: 40px;
+    font-size: 14px;
+    border: 2px solid crimson;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 50;
+    transition: background 1s ease;
+}
+.btn:hover {
+    transition: background 0.2s ease;
+    background: #1a1a1a;
+}
+.icon img {
+    width: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+}

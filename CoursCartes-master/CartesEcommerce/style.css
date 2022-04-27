@@ -1,0 +1,155 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background: rgb(218,218,218);
+}
+
+.cartes {
+    background: #f1f1f1;
+    width: 300px;
+    height: 550px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    margin: 0 25px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
+}
+
+.img1 {
+    background: url("ressources/tshirt1.png");
+}
+.img2 {
+    background: url("ressources/tshirt2.png");
+}
+.img3 {
+    background: url("ressources/tshirt3.png");
+}
+.partImg {
+    height: 60%;
+    width: 100%;
+    background-position: top;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+.filtreBleu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: background 0.4s ease;
+}
+.filtreBleu:hover {
+    cursor: pointer;
+    background: rgba(118,176,194,0.5);
+}
+.btnReveal {
+    width: 100px;
+    height: 40px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(118,176,194);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.filtreBleu:hover .btnReveal{
+    opacity: 1;
+}
+.titrePrix {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+}
+.titreCarte {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 80%;
+    font-size: 25px;
+    position: relative;
+}
+.titreCarte::after {
+    content: "Men's running shirt";
+    font-weight: 100;
+    font-size: 14px;
+    position: absolute;
+    top: 45px;
+}
+
+.prix {
+    width: 20%;
+    font-size: 18px;
+}
+.tailles {
+    padding: 3px 10px;
+    width: 100%;
+}
+.taillesTxt {
+    margin: 0;
+    font-weight: bold;
+    position: relative;
+    font-size: 18px;
+}
+.taillesTxt::after {
+    content: "S, M, L, XL";
+    font-weight: 100;
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    left:0;
+}
+.colors {
+    padding: 20px 10px;
+    width: 100%;
+}
+.sousTitreC {
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin: 0;
+}
+.contRonds {
+    width: 100%;
+    display: flex;
+}
+.ronds {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.ronds:nth-child(1){
+    background: #000;
+}
+.ronds:nth-child(2){
+    background: #9b9b9b;
+}
+.ronds:nth-child(3){
+    background: #fff;
+    border: 0.1px solid rgba(0,0,0,0.6);
+}
+.ronds:nth-child(4){
+    background: crimson;
+}
+.ronds:nth-child(5){
+    background: salmon;
+}
